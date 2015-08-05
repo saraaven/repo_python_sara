@@ -7,13 +7,8 @@
 # En kund vill köpa: Två robotar (900 kr/st),  en instruktionsbok (100 kr/st)
 # När du räknar ut det, kom ihåg att böcker har 6% moms, inte 25%
 
-#robot_price = 900 * 2 * 1.25 + 100 * 1 * 1.06
-robot_price = 900
-robot_count = 2
-robot_vat = 1.25
+robot = {"price": 900, "count": 2, "vat": 1.25}
+book = {"price": 100, "count": 1, "vat": 1.06}
 
-book_price = 100 
-book_count = 1
-book_vat = 1.06
+print robot["price"] * robot["count"] * robot["vat"] + book["price"] * book["count"] * book["vat"]
 
-print (robot_price * robot_count * robot_vat + book_price * book_count * book_vat)
