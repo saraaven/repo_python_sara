@@ -20,7 +20,7 @@ class Product(object):
 products = [Product(price = 900, count = 2, vat = 1.25), \
 Product(price = 100, count = 1, vat = 1.06)] #lista
 
-total_price = products[0].price_with_vat() + products[1].price_with_vat() #ny funktion, där jag sammanställer priset för produkterna. 
+total_price = products[0].price_with_vat() + products[1].price_with_vat() #ny variabel, där jag sammanställer priset för produkterna. 
 
 print total_price
 
